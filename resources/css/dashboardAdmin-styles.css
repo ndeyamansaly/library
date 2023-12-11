@@ -1,0 +1,66 @@
+/* Les styles pour le tableau de bord vont ici */
+
+/* Barre latérale */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    height: 100vh; /* 100% de la hauteur de la vue */
+    color: #fff;
+    position: fixed;
+}
+
+/* Logo */
+.logo {
+    padding: 20px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Barre de recherche */
+.search-bar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Autres styles */
+}
+
+/* Collections */
+.collections {
+    display: flex;
+    justify-content: space-between;
+    /* Autres styles */
+}
+
+.collection {
+    text-align: center;
+    /* Autres styles */
+}
+
+/* Raccourcis */
+.shortcuts {
+    /* Styles */
+}
+
+/* Statistiques */
+.statistics {
+    /* Styles */
+}
+
+/* Profil de l'admin */
+.admin-profile {
+    text-align: center;
+    /* Autres styles */
+}
