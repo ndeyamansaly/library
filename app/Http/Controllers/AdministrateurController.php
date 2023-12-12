@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+
 class AdministrateurController extends Controller
 {
     /**
@@ -11,9 +13,8 @@ class AdministrateurController extends Controller
      */
     public function index()
     {
-        $administrateur = Administrateur::all();
-        return view('administrateur', compact('administrateur'));
-    
+        // $administrateur = Administrateur::all();
+        return view('administrateur');
     }
 
     /**

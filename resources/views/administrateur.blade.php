@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    @vite('resources/css/app.css')
+
     <link rel="stylesheet" href="dashboard-styles.css">
+
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo">
@@ -60,13 +65,16 @@
 
         <div class="admin-profile">
             <img src="admin.jpg" alt="Admin">
-            <p>Nom de l'admin</p>
-            <p>Email de l'admin</p>
+            <p>Nom de l'admin: {{ Auth::user()->name }}</p>
+            <p>Email de l'admin: {{ Auth::user()->email }}</p>
             <p>Nombre de j'aime</p>
             <p>Nombre de commentaires</p>
+            <a href="{{ route('logout') }}"
+                class="bg-sky-500 hover:bg-sky-700 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white">Deconnexion</a>
             <button><img src="add.png" alt="Ajouter">Ajouter un document</button>
             <button><img src="payment.png" alt="Versements">Versements</button>
         </div>
     </div>
 </body>
+
 </html>
